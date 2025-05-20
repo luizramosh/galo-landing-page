@@ -15,6 +15,7 @@
     --cor3:#4D4D4D;
     --cor4:#FFD700;
     --cor5:#A6A6A6;
+    --cor6:#d9d9d988;
 
     --fonte0:'Oswald', sans-serif;
     --fonte1: 'Montserrat', sans-serif;    
@@ -23,7 +24,9 @@
 body {
     margin: 0;
     padding: 0;
+    background-color:var(--cor6);
 }
+
 
 .hero { 
     background-image: url(midias/torcida-arena.jpg);
@@ -43,6 +46,7 @@ body {
     margin-top: 0px; 
     margin-bottom: 45px;
     padding-top: 5px;
+    text-shadow: 10 10 10 10px;
    
 
 }
@@ -81,19 +85,18 @@ body {
 }
 
 section#historia {
-    background-color:var(--cor2);
-    margin: auto 0;
-    align-content: right;
+    background-color:var(--cor6);
+        align-content: right;
     text-align: right;
-    padding: 0px 40px 0px 0px;
+    padding: 10px 40px 0px 0px;
 }
 
-section#historia h3 {  
+section#historia h2 {  
     font-family: var(--fonte1);
     font-size: 3em;
     font-weight: 580; 
     text-align: center;
-    
+       
 
 }
 
@@ -101,23 +104,29 @@ section#historia p {
     padding: 0px 40px;
     text-align: justify;
     font-family: var(--fonte1);
-    font-size: 1.6em;
+    font-size: 1.3em;
+    font-weight: 420;
+    
 }
 
 section#historia img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: 40px;
+    display:block;
+    max-width: 100%;
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+    border-radius: 1%;
+    padding-bottom: 20px;
+    
 }
    
 
-
-
-
 nav.galeria {
     min-height: 400px;
+    background-color: var(--cor6);
+    
     
 }
 
@@ -125,57 +134,83 @@ nav.galeria {
     font-family: var(--fonte1);
     font-size: 3em;
     font-weight: 580; 
+    margin-top:0px;
+    margin-bottom: 10px;
+   
 }
 
 .galeria {
     text-align: center;
-    
-    
-
-    
+   
 }
 
 .galeria img {
-    width: 470px;
+    width: 100%;
+    max-width: 45%;
+    height: auto;
+    flex: 1 1 45%;
     border-radius: 5px;
+    box-sizing: border-box;
  }
 
- 
+ @media screen and (max-width: 600px;) {
+    .galeria img {
+        max-width: 100%;
+        flex: 1 1 100%;    
+ }
+    
+ }
  .rolagem {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    padding: 20px;
     justify-content: center;
     position: relative;
     overflow: hidden;
-
  }
 
  .imagens-dinamicas {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    scroll-snap-type: mandatory;
-    width: 100%;
-    overflow: hidden;
+    width: 100%;    
  }
 
-
  .galeria img:hover {
-    transform: scale(1.06);
+    transform: scale(1.02);
     cursor: pointer;
     border-radius: 5px;
     transition: 0.2s;
  }
-
-
-aside.sociais {
-
-    color: var(--cor0);  
+ #hino_do_galo h2 {
+    font-family: var(--fonte1);
+    color: var(--cor1);
+    font-size: 2em;
+    font-weight: 600;   
+    text-align: center;
     
-    padding: 5px;
-    margin-top: 20px;
  }
 
- aside.sociais h3 {
+ #hino_do_galo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:var(--cor0);
+    padding-bottom: 12px;
+
+ }
+
+aside.sociais {
+    color: var(--cor0);      
+    padding: 1px;
+    margin: 0px;
+    background-color: var(--cor6);
+
+ }
+
+ aside.sociais h2 {
     text-align: center;
     font-family: var(--fonte1);
     font-size: 2em;
@@ -189,8 +224,7 @@ aside.sociais {
     font-family: var(--fonte1);
     font-weight: 550;
     gap: 10px;
-    margin: 0px 80px 20px 80px;
-
+    margin: 0px 80px;      
  }
 
  input {
@@ -226,16 +260,20 @@ aside.sociais {
     cursor: pointer;
     font-family: var(--fonte1);
     font-weight: 500;
-    border: solid 1px var(--cor0);
-    
+    border: solid 1px var(--cor0); 
+    border-radius: 8px;   
  }
-
 
  footer {
     background-color: var(--cor0);
-    color: var(--cor2);
-    font-family: var(--fonte1);
+    color: var(--cor2);        
     text-align: center;
-    padding: 5px;
+    padding:  1px 10px;
     margin-top: 20px;
+ }
+
+ footer p {
+    line-height: 1.2;
+    font-size: 0.84em;
+    font-family: var(--fonte1);
  }
