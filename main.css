@@ -31,7 +31,7 @@ body {
 .hero { 
     background-image: url(midias/torcida-arena.jpg);
     text-align: center;
-    padding: 40px;
+    padding-bottom: 40px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@ body {
     margin-top: 0px; 
     margin-bottom: 45px;
     padding-top: 5px;
-    text-shadow: 10 10 10 10px;
+    text-shadow: 1px 0px 1px #0000002f;
    
 
 }
@@ -55,6 +55,7 @@ body {
     color: var(--cor1);
     font-family: var(--fonte1);
     font-size:1.8em;
+    text-shadow: 1px 1px 1px #0000002e;
     font-weight: 500;
     text-align: center;
     margin-bottom: -20px;
@@ -86,7 +87,7 @@ body {
 
 section#historia {
     background-color:var(--cor6);
-        align-content: right;
+    align-content: right;
     text-align: right;
     padding: 10px 40px 0px 0px;
 }
@@ -95,9 +96,7 @@ section#historia h2 {
     font-family: var(--fonte1);
     font-size: 3em;
     font-weight: 580; 
-    text-align: center;
-       
-
+    text-align: center; 
 }
 
 section#historia p {
@@ -105,23 +104,22 @@ section#historia p {
     text-align: justify;
     font-family: var(--fonte1);
     font-size: 1.3em;
-    font-weight: 420;
-    
+    font-weight: 420;    
 }
 
 section#historia img {
-    max-width: 100%;
+
+    max-width: 70%;
+    min-width: 45%;   
     height: auto;
-    display:block;
-    max-width: 100%;
+    display:block; 
     margin: 0 auto;
     align-content: center;
     text-align: center;
-    border-radius: 1%;
+   
     padding-bottom: 20px;
     
 }
-   
 
 nav.galeria {
     min-height: 400px;
@@ -146,7 +144,8 @@ nav.galeria {
 
 .galeria img {
     width: 100%;
-    max-width: 45%;
+    max-width: 40%;
+    min-width: 45%;
     height: auto;
     flex: 1 1 45%;
     border-radius: 5px;
@@ -187,6 +186,7 @@ nav.galeria {
     font-family: var(--fonte1);
     color: var(--cor1);
     font-size: 2em;
+    text-shadow: 1px 1px 1px var(--cor1);
     font-weight: 600;   
     text-align: center;
     
@@ -197,7 +197,11 @@ nav.galeria {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color:var(--cor0);
+    background-image: url(/midias/galo_doido_1.jpg);
+    background-size:cover;
+    background-position: center 18%;
+    background-repeat: no-repeat;
+    padding-top: 10px;
     padding-bottom: 12px;
 
  }
@@ -240,7 +244,7 @@ aside.sociais {
     padding-right: 15px;
  }
 
- textarea#mensagem {
+    #mensagem {
     width: 100%;
     padding: 15px;    
     border-radius: 1%;
@@ -259,8 +263,9 @@ aside.sociais {
     margin: auto;
     cursor: pointer;
     font-family: var(--fonte1);
-    font-weight: 500;
-    border: solid 1px var(--cor0); 
+    font-weight: 600;
+    background-color: var(--cor4);
+    border: solid 1px var(--cor6); 
     border-radius: 8px;   
  }
 
@@ -268,8 +273,8 @@ aside.sociais {
     background-color: var(--cor0);
     color: var(--cor2);        
     text-align: center;
-    padding:  1px 10px;
-    margin-top: 20px;
+    padding: 1px 10px;
+    margin-top: 10px;
  }
 
  footer p {
