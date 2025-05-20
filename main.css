@@ -8,8 +8,7 @@
     src: url(fontes/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
-:root {
-    
+:root {    
     --cor0:#000000;
     --cor1:#FFFFFF;
     --cor2:#D9D9D9;
@@ -18,8 +17,7 @@
     --cor5:#A6A6A6;
 
     --fonte0:'Oswald', sans-serif;
-    --fonte1: 'Montserrat', sans-serif;
-    
+    --fonte1: 'Montserrat', sans-serif;    
 }
 
 body {
@@ -68,26 +66,176 @@ body {
     font-size: 1.6em;
     padding: 15px 22px;
     border-radius: 16px;
-    border: solid var(--cor1);
-    align-content: center;
-    text-align: center;
+    border: solid var(--cor1);    
     display: block;
     margin: 1.25em auto;
     cursor:pointer;
     user-select: none;
     margin-top: 60px;
     margin-bottom: 10px;   
-
 }
 
 .hero button:hover {
-    background-color:#ffffff61;   
+    background-color:#ffffff61; 
+    transition: 0.2s;  
 }
+
+section#historia {
+    background-color:var(--cor2);
+    margin: auto 0;
+    align-content: right;
+    text-align: right;
+    padding: 0px 40px 0px 0px;
+}
+
+section#historia h3 {  
+    font-family: var(--fonte1);
+    font-size: 3em;
+    font-weight: 580; 
+    text-align: center;
+    
+
+}
+
+section#historia p {
+    padding: 0px 40px;
+    text-align: justify;
+    font-family: var(--fonte1);
+    font-size: 1.6em;
+}
+
+section#historia img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: 40px;
+}
+   
+
+
+
 
 nav.galeria {
-    margin-top: 90px;
     min-height: 400px;
-    background-color: var(--cor0);
-
+    
 }
 
+.galeria h2 {
+    font-family: var(--fonte1);
+    font-size: 3em;
+    font-weight: 580; 
+}
+
+.galeria {
+    text-align: center;
+    
+    
+
+    
+}
+
+.galeria img {
+    width: 470px;
+    border-radius: 5px;
+ }
+
+ 
+ .rolagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+ }
+
+ .imagens-dinamicas {
+    display: flex;
+    gap: 20px;
+    scroll-snap-type: mandatory;
+    width: 100%;
+    overflow: hidden;
+ }
+
+
+ .galeria img:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
+ }
+
+
+aside.sociais {
+
+    color: var(--cor0);  
+    
+    padding: 5px;
+    margin-top: 20px;
+ }
+
+ aside.sociais h3 {
+    text-align: center;
+    font-family: var(--fonte1);
+    font-size: 2em;
+    font-weight: 600;
+    
+ }
+
+ form.contato {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte1);
+    font-weight: 550;
+    gap: 10px;
+    margin: 0px 80px 20px 80px;
+
+ }
+
+ input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 1%;
+    margin-bottom: 16px;
+    font-size: 1em;   
+    color: var(--cor0);    
+    border-radius: 8px;
+    border: 1.5px solid var(--cor0);
+    gap: 10px;   
+    padding-right: 15px;
+ }
+
+ textarea#mensagem {
+    width: 100%;
+    padding: 15px;    
+    border-radius: 1%;
+    margin-bottom: 16px;
+    padding-right: 10px;
+    font-size: 1em;
+    font-family: var(--fonte1);
+    color: var(--cor0);
+    border-radius: 8px;
+    border: 1px solid var(--cor0);
+    gap: 10px;
+ }
+
+ aside button {
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    font-family: var(--fonte1);
+    font-weight: 500;
+    border: solid 1px var(--cor0);
+    
+ }
+
+
+ footer {
+    background-color: var(--cor0);
+    color: var(--cor2);
+    font-family: var(--fonte1);
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+ }
